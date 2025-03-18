@@ -6,11 +6,11 @@ Amigo Secreto 🎊
 
 * Funcionalidades do Projeto
 
-*Como Usar
+* Como Usar
 
-*Responsividade
+* Responsividade
 
-*Desenvolvido por
+* Desenvolvido por
 
 Descrição 📝
 
