@@ -1,20 +1,23 @@
 Amigo Secreto 🎊
+
 📜 Índice
 
-Descrição
+* Descrição
 
-Funcionalidades do Projeto
+* Funcionalidades do Projeto
 
-Como Usar
+*Como Usar
 
-Responsividade
+*Responsividade
 
-Desenvolvido por
+*Desenvolvido por
 
 Descrição 📝
+
 Este projeto é uma ferramenta interativa para organizar um Amigo Secreto. Ele permite que os participantes sejam adicionados e sorteios sejam realizados de forma aleatória e divertida, garantindo que ninguém tire o próprio nome.
 
 Funcionalidades do Projeto 🚀
+
 ✨ Adicionar Participantes: Insira os nomes dos participantes na lista de sorteio.
 
 🎁 Realizar Sorteio: Execute o sorteio garantindo que ninguém tire o próprio nome.
@@ -30,7 +33,9 @@ Funcionalidades do Projeto 🚀
 📱 Design Responsivo: Funciona perfeitamente em desktops, tablets e dispositivos móveis.
 
 Como Usar 🎮
+
 Adicionando Participantes
+
 Adicione os nomes dos participantes no campo "Nome".
 
 Edite um nome já adicionado clicando no ícone de edição ou dando um duplo clique no nome.
@@ -38,11 +43,13 @@ Edite um nome já adicionado clicando no ícone de edição ou dando um duplo cl
 Remova um participante clicando no ícone de lixeira.
 
 Iniciando o Sorteio
+
 Clique em "Continuar" para iniciar o sorteio.
 
 O sistema garante que ninguém tire o próprio nome.
 
 Revelando o Amigo Secreto
+
 Clique em "Preparar" para ver quem será o próximo a sortear.
 
 Clique em "Sortear" para revelar o amigo secreto.
@@ -52,6 +59,7 @@ Use o botão "Ocultar" para esconder o resultado antes de passar o dispositivo.
 Clique em "Reiniciar" para começar um novo sorteio após todos verem seus resultados.
 
 Responsividade 📱
+
 O aplicativo foi projetado para funcionar em:
 
 💻 Desktops e Laptops
