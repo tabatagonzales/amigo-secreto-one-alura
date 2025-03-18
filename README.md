@@ -1,10 +1,12 @@
-Amigo Secreto 🎊
+**Amigo Secreto**🎊
 
-📜 Índice
+Este projeto é uma ferramenta interativa para organizar um Amigo Secreto. Ele permite que os participantes sejam adicionados e sorteios sejam realizados de forma aleatória e divertida, garantindo que ninguém tire o próprio nome.
+
+📜 **Índice**
 
 * Descrição
 
-* Funcionalidades do Projeto
+* Funcionalidades
 
 * Como Usar
 
@@ -12,11 +14,11 @@ Amigo Secreto 🎊
 
 * Desenvolvido por
 
-Descrição 📝
+📝**Descrição** 
 
-Este projeto é uma ferramenta interativa para organizar um Amigo Secreto. Ele permite que os participantes sejam adicionados e sorteios sejam realizados de forma aleatória e divertida, garantindo que ninguém tire o próprio nome.
+O Amigo Secreto é uma ferramenta simples e divertida para organizar sorteios entre amigos. Ele garante que cada pessoa receba um amigo diferente para presentear.
 
-Funcionalidades do Projeto 🚀
+🚀**Funcionalidades**  
 
 ✨ Adicionar Participantes: Insira os nomes dos participantes na lista de sorteio.
 
@@ -32,33 +34,29 @@ Funcionalidades do Projeto 🚀
 
 📱 Design Responsivo: Funciona perfeitamente em desktops, tablets e dispositivos móveis.
 
-Como Usar 🎮
+🎮 **Como Usar**
 
-Adicionando Participantes
+Adicione os nomes dos participantes no campo "Nome" 📝.
 
-Adicione os nomes dos participantes no campo "Nome".
+Edite um nome já adicionado clicando no ícone de edição 🖋️ ou dando um duplo clique no nome.
 
-Edite um nome já adicionado clicando no ícone de edição ou dando um duplo clique no nome.
+Remova um participante clicando no ícone de lixeira 🚮.
 
-Remova um participante clicando no ícone de lixeira.
+Iniciando o Sorteio 🎉
+Clique em "Continuar" para iniciar o sorteio 🚀.
 
-Iniciando o Sorteio
+O sistema garante que ninguém tire o próprio nome 🙅‍♂️.
 
-Clique em "Continuar" para iniciar o sorteio.
+Revelando o Amigo Secreto 🎊
+Clique em "Preparar" para ver quem será o próximo a sortear 🔍.
 
-O sistema garante que ninguém tire o próprio nome.
-
-Revelando o Amigo Secreto
-
-Clique em "Preparar" para ver quem será o próximo a sortear.
-
-Clique em "Sortear" para revelar o amigo secreto.
+Clique em "Sortear" para revelar o amigo secreto 🎁.
 
 Use o botão "Ocultar" para esconder o resultado antes de passar o dispositivo.
 
 Clique em "Reiniciar" para começar um novo sorteio após todos verem seus resultados.
 
-Responsividade 📱
+📱 **Responsividade**
 
 O aplicativo foi projetado para funcionar em:
 
@@ -68,6 +66,5 @@ O aplicativo foi projetado para funcionar em:
 
 📲 Smartphones e Dispositivos Móveis
 
-Desenvolvido por
-Tabata Gonzales
-
+**Desenvolvido por
+Tabata Gonzales**
