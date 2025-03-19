@@ -1,39 +1,24 @@
-<<<<<<< HEAD
+
 /* Reset global */
 * {
-=======
-/* Importação de fontes externas */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* Reset global para garantir consistência entre navegadores */
-*, *::after, *::before, html, body {
-    box-sizing: border-box;
->>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     text-overflow: ellipsis;
     word-break: break-word;
 }
 
-<<<<<<< HEAD
+/* Importação de fontes externas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Corpo da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #4f92eb;
-    color: white;
-=======
-/* Configurações básicas do documento */
-html, body {
-    font-size: 100%;
-    line-height: 26px;
-    -webkit-text-size-adjust: 100%;
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
 }
 
 /* Variáveis globais */
@@ -53,19 +38,12 @@ html, body {
     --font-heading: clamp(1rem, 0.75rem + 0.8333333333333334vw, 1.25rem); /* Cabeçalhos médios/grandes */
 }
 
-/* Container principal que organiza todo o conteúdo em coluna */
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-primary);
-}
-
-/* Seção de cabeçalho do site */
+/* Cabeçalho */
 header {
-    position: relative;
+    background-color: #4f92eb;
+    color: white;
     padding: 16px 20px; 
     z-index: 2;
-    background-color: var(--color-secondary);
 }
 
 /* Container que limita a largura do conteúdo do cabeçalho */
@@ -415,64 +393,10 @@ footer {
     line-height: 28px;
     font-size: var(--font-body-small);
     color: #494b4e;
->>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
     text-align: center;
     padding: 20px;
 }
 
-<<<<<<< HEAD
-.title {
-    font-size: 2em;
-}
-
-/* Conteúdo principal */
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-
-.interface-panel {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.buttons-group {
-    display: flex;
-    gap: 10px;
-}
-
-.btn {
-    padding: 10px 20px;
-    background-color: #4f92eb;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #3b7cc3;
-}
-
-#participantsList li,
-#resultado li {
-    list-style-type: none;
-    margin-bottom: 10px;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-=======
 /* Texto de créditos no rodapé */
 .footer-credits-text {
     margin: 10px 0;
@@ -519,8 +443,6 @@ footer {
 li a {
     text-decoration: none;
     color: var(--color-secondary);
->>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
-    padding: 10px;
 }
 
 /* Estado hover para links de redes sociais */

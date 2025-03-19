@@ -7,178 +7,74 @@
     <script src="https://kit.fontawesome.com/12eb525db5.js" crossorigin="anonymous"></script>
     <title>Amigo Secreto</title>
     <style>
-        /* Reset global */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Corpo da página */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-
-        /* Cabeçalho */
-        header {
-            background-color: #4f92eb;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
+        /* Centralizar a imagem e o título */
         .header-content {
-            display: flex; /* Alinha itens horizontalmente */
-            align-items: center; /* Centraliza verticalmente */
-            justify-content: center; /* Centraliza horizontalmente */
-            gap: 15px; /* Espaço entre imagem e texto */
+            display: flex;
+            flex-direction: column; /* Alinha itens verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+            text-align: center;
         }
 
         .header-image {
-            width: 80px; /* Ajuste do tamanho da imagem */
-            height: auto; /* Mantém proporção */
+            width: 100px; /* Ajuste do tamanho da imagem */
+            height: auto;
+            margin-bottom: 10px; /* Espaço entre a imagem e o título */
         }
 
         .title {
             font-size: 2em;
-        }
-
-        /* Conteúdo principal */
-        main {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .interface-panel {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .input-group input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        .buttons-group {
-            display: flex;
-            gap: 10px;
-        }
-
-        .btn {
-            padding: 10px 20px;
-            background-color: #4f92eb;
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background-color: #3b7cc3;
-        }
-
-        #participantsList li,
-        #resultado li {
-            list-style-type: none;
-            margin-bottom: 10px;
-        }
-
-        /* Rodapé */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-        }
-
-        .footer-container {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .footer-title {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-
-        .footer-text,
-        .footer-credits-text {
-            font-size: 0.9em;
-        }
-
-        .socials li {
-            display: inline-block;
-            margin-right: 10px;
         }
     </style>
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
         <div class="header-content">
-<<<<<<< HEAD
             <img src="./assets/amigo-secreto.png" alt="Ilustração de amigos celebrando o sorteio do Amigo Secreto" class="header-image">
-            
-=======
->>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
             <h1 class="title">
                 <i class="fa-solid fa-gift"></i>
                 Sorteio do Amigo Secreto
             </h1>
         </div>
     </header>
-    
+
+    <!-- Conteúdo Principal -->
     <main>
         <div class="interface-panel">
-<<<<<<< HEAD
-            <!-- Mensagem inicial, botão para ocultar nome sorteado e mensagem de alerta -->
+            <!-- Mensagem Inicial -->
             <p id="drawResult"> Vamos brincar de Amigo Secreto! 😎 Adicione os amigos e sorteie agora! 🎉 </p>
-            
-            <button id="hideBtn" class="hide-btn" onclick="hideSelectedFriend()"></button>
-            
-            <p class="alert-message"></p>
-=======
-            <p id="drawResult"> Sorteio do Amigo Secreto na área! 😎 Só adicionar e sortear! 🎉 </p>
->>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
-            
-            <!-- Lista de participantes -->
+
+            <!-- Lista de Participantes -->
             <div class="participants-container">
                 <div class="participants" id="participants">
                     <ul id="participantsList"></ul>
                 </div>
-<<<<<<< HEAD
                 <button class="participants-btn" onclick="toggleParticipants()">
                     Lista de Amigos -
                 </button>
             </div>
-            
-            <!-- Seção de entrada para adicionar participantes e iniciar o sorteio -->
+
+            <!-- Seção de Entrada -->
             <div class="action-panel">
                 <div class="input-group">
                     <input type="text" class="input-field" id="inputField" required>
                     <label for="inputField">Nome</label>
                 </div>
-                
+
+                <!-- Botões -->
                 <div class="buttons-group">
                     <button class="btn btn-add" id="addButton" onclick="insertFriend()" aria-label="Adicionar amigo">Adicionar</button>
                     <button class="btn btn-reveal" id="drawButton" data-state="continue" onclick="drawRandomParticipant()">Continuar</button>
                 </div>
             </div>
-            
-            <!-- Resultado do sorteio -->
+
+            <!-- Resultado do Sorteio -->
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
-        
         </div>        
     </main>
 
     <!-- Rodapé -->
-    <footer>
-        <div class="footer-container">
-            
-                <!-- Rodapé -->
     <footer>
         <div class="footer-container">
             <!-- Créditos -->
@@ -186,24 +82,20 @@
                 <h3 class="footer-title">Créditos</h3>
                 <p class="footer-credits-text">
                     Imagem de 
-                    <a href="https://www.freepik.com/author/pch-vector" target="_blank" rel="noopener noreferrer">
-                        pch.vector
-                    </a> 
+                    <a href="https://www.freepik.com/author/pch-vector" target="_blank" rel="noopener noreferrer">pch.vector</a> 
                     disponível em 
-                    <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">
-                        Freepik.
-                    </a>
+                    <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">Freepik</a>.
                     </br>
                     Ícones fornecidos por 
-                    <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a> 
+                    <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">Font Awesome</a>.
                 </p>
-            
-                <!-- Créditos de desenvolvimento -->
+
+                <!-- Créditos de Desenvolvimento -->
                 <h3 class="footer-title">Desenvolvido por </h3>
                 <p class="footer-credits-text">Tabata Gonzales</p>
             </div>
 
-            <!-- Descrição do projeto -->
+            <!-- Descrição do Projeto -->
             <div class="footer-description">
                 <h3 class="footer-title">Sorteio do Amigo Secreto</h3>
                 <p class="footer-text">
@@ -212,70 +104,30 @@
                     de Amigo Secreto, aplicando os conceitos aprendidos durante o curso!
                 </p>
             </div>
-        
-            <!-- Redes sociais -->
+
+            <!-- Redes Sociais -->
             <div class="footer-contact">
                 <h3 class="footer-title">Contate-me</h3>
                 <ul class="socials">
-                    
                     <li>
                         <a href="https://www.linkedin.com/in/tabatagscarvalho/" 
                            class="fa-brands fa-linkedin fa-3x" 
                            target="_blank" 
-                           aria-label="LinkedIn">
-                        </a>
+                           aria-label="LinkedIn"></a>
                     </li>
 
                     <li>
                         <a href="https://github.com/tabatagonzales/" 
                            class="fa-brands fa-square-github fa-3x" 
                            target="_blank" 
-                           aria-label="GitHub">
-                        </a>
+                           aria-label="GitHub"></a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </footer>
-    
-    <!-- CDN confete -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
-    <!-- Script principal -->
-=======
-            </div>
-            
-            <!-- Seção de entrada para adicionar participantes e iniciar o sorteio -->
-            <div class="action-panel">
-                <div class="input-group">
-                    <input type="text" class="input-field" id="inputField" required>
-                    <label for="inputField">Nome</label>
-                </div>
-                
-                <div class="buttons-group">
-                    <button class="btn btn-add" id="addButton" onclick="insertFriend()" aria-label="Adicionar amigo">Adicionar</button>
-                    <button class="btn btn-reveal" id="drawButton" data-state="continue" onclick="drawRandomParticipant()">Continuar</button>
-                </div>
-            </div>
-            
-            <!-- Resultado do sorteio -->
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
-        </div>
-        
-        <!-- Rodapé -->
-        <footer>
-            <div class="footer-container">
-                <!-- Créditos -->
-                <p class="footer-credits-text">
-                    Desenvolvido por [Seu Nome].
-                </p>
-            </div>
-        </footer>
-    </main>
-    
->>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
-    <script src="app.js" defer></script>
+
+    <!-- CDN Confete -->
+    <script src="./app.js" defer></script>
 </body>
 </html>
-
-
