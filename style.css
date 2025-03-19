@@ -1,10 +1,22 @@
+<<<<<<< HEAD
 /* Reset global */
 * {
+=======
+/* Importação de fontes externas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset global para garantir consistência entre navegadores */
+*, *::after, *::before, html, body {
+    box-sizing: border-box;
+>>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    word-break: break-word;
 }
 
+<<<<<<< HEAD
 /* Corpo da página */
 body {
     font-family: Arial, sans-serif;
@@ -15,10 +27,400 @@ body {
 header {
     background-color: #4f92eb;
     color: white;
+=======
+/* Configurações básicas do documento */
+html, body {
+    font-size: 100%;
+    line-height: 26px;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+/* Variáveis globais */
+:root {
+    /* Cores */
+    --color-primary: #ffffff;
+    --color-secondary: #4f92eb; 
+    --color-tertiary: #000000;
+    --color-auxiliary: #cfddf8;
+    --color-highlight: #12ca36;
+
+    /* Tamanhos de Fontes */
+    --font-label: clamp(0.62rem, 0.49rem + 0.4333333333333333vw, 0.75rem); /* Texto pequeno, como labels e legendas */
+    --font-extra-small: clamp(0.7rem, 0.5999999999999999rem + 0.3333333333333336vw, 0.8rem); /* Texto secundário pequeno */
+    --font-body-small: clamp(0.8rem, 0.7000000000000001rem + 0.33333333333333326vw, 0.9rem); /* Texto pequeno do corpo */
+    --font-body: clamp(0.875rem, 0.75rem + 0.416vw, 1rem); /* Texto padrão do corpo */
+    --font-heading: clamp(1rem, 0.75rem + 0.8333333333333334vw, 1.25rem); /* Cabeçalhos médios/grandes */
+}
+
+/* Container principal que organiza todo o conteúdo em coluna */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+}
+
+/* Seção de cabeçalho do site */
+header {
+    position: relative;
+    padding: 16px 20px; 
+    z-index: 2;
+    background-color: var(--color-secondary);
+}
+
+/* Container que limita a largura do conteúdo do cabeçalho */
+.header-content {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Título principal do site no cabeçalho */
+.title {
+    font-family: "Tomorrow", sans-serif;
+    font-size: var(--font-heading);
+    color: var(--color-primary);
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 1.3em;
+}
+
+.title i {
+    color: #ffffff;
+    margin-right: 3px;
+}
+
+/* Seção principal que contém todo o conteúdo da aplicação */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;   
+    padding: 40px 50px 100px 50px;
+    min-height: auto;
+    min-width: 100%;
+    gap: 50px;
+}
+
+/* Painel que contém todos os controles e resultados da interface */
+.interface-panel {
+    display: flex;  
+    flex-direction: column;
+    min-width: 420px;
+    min-height: 500px;
+    max-width: 100%;
+}
+
+/* Elemento que exibe o resultado do sorteio */
+#drawResult {
+    display: inline-block;
+    min-height: 4.5em;
+    font-family: Poppins, sans-serif;
+    font-size: var(--font-heading);
+    color: var(--color-tertiary);
+    font-weight: 500;
+    line-height: 1.5;
+    white-space: normal;
+}
+
+/* Destaque para o nome do sorteador atual */
+.highlight-current {
+    color: var(--color-secondary); /* Destaque azul para o sorteador atual */
+}
+
+/* Destaque para o nome do amigo sorteado */
+.highlight-random {
+    color: var(--color-highlight); /* Destaque verde para o amigo sorteado */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Estado colapsado do nome do amigo sorteado - oculto */
+.highlight-random.collapsed {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+/* Container para exibir mensagens de alerta ao usuário */
+.alert-message {
+    font-family: Poppins, sans-serif;
+    font-size: var(--font-body-small);
+    min-height: 3em;
+    padding: 0.8em 0;
+    line-height: 1.3em;
+    text-align: center; 
+    align-items: center;
+    color: var(--color-tertiary); 
+    border-radius: 5px;
+    opacity: 0; /* Inicialmente invisível */
+    visibility: hidden; /* Removido do fluxo do layout */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Transição suave */
+}
+
+/* Container principal para a seção de participantes */
+.participants-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Botão que alterna a visibilidade da lista de participantes */
+.participants-btn {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Centraliza o botão */
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 40%;
+    padding: 3px 5px 3px 5px;
+    border: none;
+    border-radius: 0 0 12px 12px;
+    font-family: "Open Sans", "Arial", "Droid Sans", sans-serif; 
+    font-size: var(--font-body);
+    color: var(--color-primary);
+    background: var(--color-secondary);
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Painel que contém a lista de participantes */
+.participants {
+    width: 100%;
+    min-height: 10rem; 
+    color: var(--color-tertiary);
+    overflow: hidden;   
+    border-radius: 17px; 
+    border: 2px solid var(--color-auxiliary);
+    box-shadow: rgba(207, 221, 248, 0.842) 0px 4px 25px -8px;
+    border-top-width: 0px;
+    margin-bottom: 1.5em;
+    opacity: 1; /* Estado inicial visível */
+    visibility: visible; /* Estado inicial visível */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Lista principal de participantes em formato grid */
+#participantsList {
+    display: grid; 
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Use frações em vez de pixels fixos */
+    gap: 0.5em; 
+    width: 100%; 
+    max-height: 8em;
+    overflow-y: auto; /* Rolagem vertical para listas grandes */
+    scrollbar-gutter: stable;
+    margin: 1.5rem 0 0 0; 
+    padding: 0.7rem 1rem 0 1rem; 
+}
+
+/* Item individual na lista de participantes */
+#participantsList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    width: 100%; 
+    height: 35px; 
+    padding: 0.5em; 
+    font-size: var(--font-body-small);
+    font-family: Poppins, sans-serif; 
+    list-style-type: none;
+    background-color: #a5a5a525;
+    border-radius: 5px;
+}
+
+/* Estados colapsados para painel de participantes e campo de entrada */
+.participants.collapsed,
+#inputField.collapsed,
+label[for="inputField"].collapsed {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Estados não-colapsados para painel de participantes e campo de entrada */
+.participants:not(.collapsed),
+#inputField:not(.collapsed),
+label[for="inputField"]:not(.collapsed) {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+/* Painel de ações e entrada de dados */
+.action-panel {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+}
+
+/* Grupo de input com label flutuante */
+.input-group {
+    position: relative; 
+    width: 100%; 
+}
+
+/* Campo de entrada de texto com estilo moderno */
+.input-field {
+    width: 100%; 
+    height: 3.5em; 
+    padding: 0 1rem; 
+    font-family: Poppins, sans-serif; 
+    font-size: var(--font-body);
+    color: var(--color-tertiary); 
+    border: 2px solid var(--color-auxiliary); 
+    border-radius: 16px; 
+    background: transparent; 
+    outline: none; 
+}
+
+/* Label flutuante para campo de entrada */
+.input-group label {
+    position: absolute; 
+    top: 50%; 
+    left: 1rem; 
+    padding: 0 5px; 
+    font-family: Poppins, sans-serif; 
+    color: var(--color-auxiliary);
+    font-size: var(--font-body);
+    border-radius: 20px;
+    pointer-events: none; 
+    transform: translateY(-50%); 
+    transition: 0.3s; 
+    padding: 0 2px; 
+    line-height: 1; 
+}
+
+/* Animação para label flutuante quando o campo está focado ou preenchido */
+.input-group input:focus ~ label, 
+.input-group input:valid ~ label {
+    top: 0; 
+    font-size: var(--font-label);
+    font-weight: 500; 
+    color: var(--color-secondary); 
+    background-color: var(--color-primary);
+    border-radius: 20px; 
+}
+
+/* Estilo base para todos os botões */
+.btn {
+    width: 100%;
+    padding: clamp(1.1rem, 0.9000000000000004rem + 0.6666666666666657vw, 1.2rem);
+    position: relative;
+    background: var(--color-secondary);
+    margin-bottom: 0.5rem;
+    font-family: "Open Sans", "Arial", "Droid Sans", sans-serif; 
+    font-size: clamp(0.9rem, 0.7333333333333334rem + 0.5555555555555554vw, 1rem);
+    border-radius: 12px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    border: none;
+}
+
+/* Botão de adicionar participante */
+.btn-add {
+    margin-top: 1rem; 
+}
+
+/* Estado desabilitado do botão adicionar */
+.btn-add:disabled {
+    background-color: #a9a7a7; 
+    pointer-events: none; 
+}
+
+/* Botão para revelar resultado do sorteio */
+.btn-reveal {
+    margin-top: 0.5rem; 
+}
+
+/* Efeito 3D para botões principais */
+.btn-add, .btn-reveal {
+    box-shadow: -6px -6px 10px rgb(228, 229, 226, 0.8),
+        6px 6px 10px rgba(0, 0, 0, 0.2);
+    color: var(--color-primary);
+}
+
+/* Estado hover para botões principais */
+.btn-add:hover, .btn-reveal:hover {
+    opacity: 0.6;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.9),
+        6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estado active (pressionado) para botões principais */
+.btn-add:active, .btn-reveal:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+        inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+}
+
+/* Seção de rodapé do site */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    height: auto;
+    padding: 30px 30px;
+    width: 100vw;
+    color: var(--color-tertiary);
+}
+
+/* Container limitador do conteúdo do rodapé */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1250px;
+}
+
+/* Seção de créditos no rodapé */
+.footer-credits {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* Seção de descrição no rodapé */
+.footer-description {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Título dentro do rodapé */
+.footer-title {
+    font-size: var(--font-body);
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+/* Texto principal no rodapé */
+.footer-text {
+    max-width: 500px;
+    margin: 10px 0;
+    line-height: 28px;
+    font-size: var(--font-body-small);
+    color: #494b4e;
+>>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
     text-align: center;
     padding: 20px;
 }
 
+<<<<<<< HEAD
 .title {
     font-size: 2em;
 }
@@ -70,5 +472,113 @@ main {
 /* Rodapé */
 footer {
     text-align: center;
+=======
+/* Texto de créditos no rodapé */
+.footer-credits-text {
+    margin: 10px 0;
+    line-height: 28px;
+    font-size: var(--font-body-small);
+    color: #494b4e;
+    text-decoration: none; 
+}
+
+/* Links dentro dos créditos do rodapé */
+.footer-credits-text a {
+    color: var(--color-secondary);
+    text-decoration: none; 
+}
+
+/* Estado hover para links nos créditos do rodapé */
+.footer-credits-text a:hover {
+    text-decoration: underline; 
+}
+
+/* Seção de contato no rodapé */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Lista de links para redes sociais */
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Itens da lista de redes sociais */
+.socials li {
+    margin: 0;
+}
+
+/* Links dentro dos itens de redes sociais */
+li a {
+    text-decoration: none;
+    color: var(--color-secondary);
+>>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
     padding: 10px;
 }
+
+/* Estado hover para links de redes sociais */
+li a:hover {
+    color: #8bc7fb; 
+}
+
+/* Tablets e dispositivos médios */
+@media screen and (max-width: 768px) {
+    /* Container principal responsivo */
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        min-width: 100%;
+        padding: 20px 30px 30px 30px;
+        min-height: calc(100vh - 80px); /* Ajusta para altura da tela menos o cabeçalho */
+    }
+    
+    /* Título responsivo */
+    .title {
+        margin-left: 0;
+    }
+    
+    /* Ajuste do painel de interface em telas médias */
+    .interface-panel {
+        min-width: 0;
+        z-index: 1;
+        max-width: 365px;
+    }
+
+    /* Ajuste do botão de participantes em telas médias */
+    .participants-btn {
+        width: 50%;
+    }
+
+    /* Oculta decorações em telas menores */
+    .decoration {
+        display: none;
+    }
+
+    /* Reorganiza o footer em coluna para telas médias */
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Centraliza créditos no footer em telas médias */
+    .footer-credits {
+        align-items: center;
+    }
+
+    /* Altera ordem da descrição no footer em telas médias */
+    .footer-description {
+        order: -1;
+    }
+}
+
+/* Smartphones e

@@ -1,67 +1,43 @@
-Amigo Secreto🎊
+# Amigo Secreto
+Este projeto permite que você adicione nomes de amigos e realize um sorteio para definir um amigo secreto. É uma ferramenta simples e divertida para organizar brincadeiras de amigos secretos.
 
-Este projeto é uma ferramenta interativa para organizar um Amigo Secreto. Ele permite que os participantes sejam adicionados e sorteios sejam realizados de forma aleatória e divertida, garantindo que ninguém tire o próprio nome.
+## Por que usar o Amigo Secreto?
+- **Fácil de Usar**: Basta digitar o nome do amigo e clicar em adicionar. Depois, é só sortear e descobrir quem será o seu amigo secreto!
+- **Divertido e Surpreendente**: O sorteio é completamente aleatório, então você nunca sabe quem vai ser escolhido!
+- **Perfeito para Grupos**: Ideal para grupos de amigos, família ou até mesmo para eventos no trabalho.
 
-📜 Índice
+## Como Funciona?
+1. **Adicione Amigos**: Use o campo de texto para digitar o nome do amigo e clique em "Adicionar Amigo".
+2. **Sorteie um Amigo**: Após adicionar todos os amigos, clique em "Sortear Amigo" para descobrir quem será o seu amigo secreto.
+3. **Veja o Resultado**: O resultado do sorteio aparecerá na tela, revelando quem é o seu amigo secreto!
 
-Descrição
+## Instalação e Execução
 
-Funcionalidades
+1. **Clonar o Repositório**:
+   - Execute o comando `git clone https://github.com/seu-usuario/amigo-secreto.git` no terminal.
+2. **Abrir o Projeto**:
+   - Abra o arquivo `index.html` no navegador para executar o projeto.
 
-Como Usar
+## Requisitos
 
-Responsividade
+- **Navegador Moderno**: O projeto funciona em navegadores modernos como Google Chrome, Mozilla Firefox, etc.
+- **Conexão com a Internet**: Não é necessário, pois o projeto é executado localmente.
 
-Desenvolvido por
+## Contribuição
 
-📝Descrição
+Contribuições são bem-vindas! Se você tiver alguma ideia para melhorar o projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-O Amigo Secreto é uma ferramenta simples e divertida para organizar sorteios entre amigos. Ele garante que cada pessoa receba um amigo diferente para presentear.
+## Problemas Conhecidos
 
-🚀Funcionalidades
+- **Sorteio não funciona sem amigos**: Certifique-se de que há pelo menos um amigo adicionado antes de realizar o sorteio.
 
-✨ Adicionar Participantes: Insira os nomes dos participantes na lista de sorteio.
+## Licença
 
-🎁 Realizar Sorteio: Execute o sorteio garantindo que ninguém tire o próprio nome.
+Este projeto é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-👫 Interface para Revelar Pares: Exiba os resultados do sorteio de forma individual.
+## Contato
 
-🖋️ Edição e Remoção de Participantes: Edite ou remova nomes já adicionados.
+Se tiver alguma dúvida ou precisar de ajuda, entre em contato pelo meu perfil no GitHub.
+---
 
-🔑 Opção de Esconder/Mostrar: Esconda ou mostre o nome do amigo sorteado.
-
-🎉 Animação de Confetes: Celebre cada revelação com uma animação divertida.
-
-📱 Design Responsivo: Funciona perfeitamente em desktops, tablets e dispositivos móveis.
-
-🎮 Como Usar
-
-Adicione os nomes dos participantes no campo "Nome" 📝.
-
-Edite um nome já adicionado clicando no ícone de edição 🖋️ ou dando um duplo clique no nome.
-
-Remova um participante clicando no ícone de lixeira 🚮.
-
-Iniciando o Sorteio 🎉 Clique em "Continuar" para iniciar o sorteio 🚀.
-
-O sistema garante que ninguém tire o próprio nome 🙅‍♂️.
-
-Revelando o Amigo Secreto 🎊 Clique em "Preparar" para ver quem será o próximo a sortear 🔍.
-
-Clique em "Sortear" para revelar o amigo secreto 🎁.
-
-Use o botão "Ocultar" para esconder o resultado antes de passar o dispositivo.
-
-Clique em "Reiniciar" para começar um novo sorteio após todos verem seus resultados.
-
-📱 Responsividade
-
-O aplicativo foi projetado para funcionar em:
-
-💻 Desktops e Laptops
-
-📱 Tablets
-
-📲 Smartphones e Dispositivos Móveis
-
-Desenvolvido por Tabata Gonzales
+**Obrigado por usar o Amigo Secreto! Esperamos que você se divirta!**

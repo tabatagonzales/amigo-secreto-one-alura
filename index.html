@@ -119,8 +119,11 @@
 <body>
     <header>
         <div class="header-content">
+<<<<<<< HEAD
             <img src="./assets/amigo-secreto.png" alt="Ilustração de amigos celebrando o sorteio do Amigo Secreto" class="header-image">
             
+=======
+>>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
             <h1 class="title">
                 <i class="fa-solid fa-gift"></i>
                 Sorteio do Amigo Secreto
@@ -130,18 +133,23 @@
     
     <main>
         <div class="interface-panel">
+<<<<<<< HEAD
             <!-- Mensagem inicial, botão para ocultar nome sorteado e mensagem de alerta -->
             <p id="drawResult"> Vamos brincar de Amigo Secreto! 😎 Adicione os amigos e sorteie agora! 🎉 </p>
             
             <button id="hideBtn" class="hide-btn" onclick="hideSelectedFriend()"></button>
             
             <p class="alert-message"></p>
+=======
+            <p id="drawResult"> Sorteio do Amigo Secreto na área! 😎 Só adicionar e sortear! 🎉 </p>
+>>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
             
             <!-- Lista de participantes -->
             <div class="participants-container">
                 <div class="participants" id="participants">
                     <ul id="participantsList"></ul>
                 </div>
+<<<<<<< HEAD
                 <button class="participants-btn" onclick="toggleParticipants()">
                     Lista de Amigos -
                 </button>
@@ -234,6 +242,40 @@
     <!-- CDN confete -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     <!-- Script principal -->
+=======
+            </div>
+            
+            <!-- Seção de entrada para adicionar participantes e iniciar o sorteio -->
+            <div class="action-panel">
+                <div class="input-group">
+                    <input type="text" class="input-field" id="inputField" required>
+                    <label for="inputField">Nome</label>
+                </div>
+                
+                <div class="buttons-group">
+                    <button class="btn btn-add" id="addButton" onclick="insertFriend()" aria-label="Adicionar amigo">Adicionar</button>
+                    <button class="btn btn-reveal" id="drawButton" data-state="continue" onclick="drawRandomParticipant()">Continuar</button>
+                </div>
+            </div>
+            
+            <!-- Resultado do sorteio -->
+            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+        </div>
+        
+        <!-- Rodapé -->
+        <footer>
+            <div class="footer-container">
+                <!-- Créditos -->
+                <p class="footer-credits-text">
+                    Desenvolvido por [Seu Nome].
+                </p>
+            </div>
+        </footer>
+    </main>
+    
+>>>>>>> b1b14cd52a56d23b186ecc27f0ea1d30a0fd2924
     <script src="app.js" defer></script>
 </body>
 </html>
+
+
